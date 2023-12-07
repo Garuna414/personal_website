@@ -1,0 +1,99 @@
+/*
+Contact webpage
+*/
+
+.col-2 {
+    display: none;
+  }
+  
+
+@media (min-width: 992px) {
+    .col-2 {
+      display: block; /* Display the component when the screen width is 768px or wider */
+    }
+  }
+  
+
+p {
+    font-family: monospace;
+    font-size: 25px;
+}
+
+h1, h2, h3, h4 {
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+button, a {
+    font-family: monospace;
+
+}
+
+.links:hover{
+    scale: 1.1;
+}
+
+
+.repo {    
+    background-color: #2b3035;
+    padding: 10px 10px 10px 10px;
+    border-radius : 10px;
+    color: white;
+    text-decoration : none;
+    margin: 20px 20px 20px 0;
+    transition: .2s ease-in-out;
+}
+
+.repo:hover{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover{
+    color: lightgray;
+}
+
+.sbmt {
+    background-color: #2b3035;
+    color: white;
+    width: 130px;
+    height: 35px;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.sbmt:hover{
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.musicBox {    
+    background-color: white;
+    width: 270px;
+    height: 100px;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 15px 15px 15px;
+    border-radius: 10px;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    transition: .2s ease-in-out;
+}
+
+.musicBox:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+
+.prjImg {
+    margin: 10px;
+}
