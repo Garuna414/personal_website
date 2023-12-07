@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import profile from '../images/profile.png'
 
 function Home() {
   return (
@@ -52,7 +53,7 @@ function Home() {
               padding: "20px 20px 20px 20px"
             }}
           >
-            <img src="/images/profile.png" alt="" />
+            <img src={profile} />
             <div
               style={{
                 display: "flex",

@@ -1,6 +1,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./hover.css";
+import uno from "../images/arduino_uno.png";
+import sensor from "../images/humidity_sensor.png";
+import sensor_prj from "../images/sensor_prj.png";
+import anime from "../images/anime_recommend.png";
+import movie from "../images/movie_recommend.png";
+import car from "../images/D2S_car.png";
+import menu from "../images/D2S_menu.png";
+
 
 function Projects() {
   return (
@@ -102,19 +110,19 @@ function Projects() {
               <div style={{ width: "40%", margin: "20px 20px" }}>
                 <img
                   className="prjImg"
-                  src="./images/arduino_uno.png"
+                  src={uno}
                   alt=""
                   style={{ maxHeight: "200px", maxWidth: "200px" }}
                 />
                 <img
                   className="prjImg"
-                  src="./images/humidity_sensor.png"
+                  src={sensor}
                   alt=""
                   style={{ maxHeight: "200px", maxWidth: "200px" }}
                 />
                 <img
                   className="prjImg"
-                  src="./images/sensor_prj.png"
+                  src={sensor_prj}
                   alt=""
                   style={{ maxHeight: "630px", maxWidth: "320px" }}
                 />
@@ -156,13 +164,13 @@ function Projects() {
               <div style={{ width: "40%", margin: "20px 20px auto" }}>
                 <img
                   className="prjImg"
-                  src="./images/D2S_menu.png"
+                  src={menu}
                   alt=""
                   style={{ width: "100%" }}
                 />
                 <img
                   className="prjImg"
-                  src="./images/D2S_car.png"
+                  src={car}
                   alt=""
                   style={{ width: "100%" }}
                 />
@@ -203,13 +211,13 @@ function Projects() {
               <div style={{ width: "40%", margin: "20px 20px auto" }}>
                 <img
                   className="prjImg"
-                  src="./images/anime_recommend.png"
+                  src={anime}
                   alt=""
                   style={{ width: "100%" }}
                 />
                 <img
                   className="prjImg"
-                  src="./images/anime_recommend.png"
+                  src={movie}
                   alt=""
                   style={{ width: "100%" }}
                 />

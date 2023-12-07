@@ -2,6 +2,9 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./hover.css";
 import VideoBg from "../assets/timelapse.mp4";
+import dav from "../images/dav.png";
+import brio from "../images/brio.png";
+import fcrit from "../images/fcrit.png";
 
 function AboutMe() {
   document.body.style.margin = "0";
@@ -166,7 +169,7 @@ function AboutMe() {
           <br />
 
           <section id="school">
-            <h1>School1</h1>
+            <h1>School</h1>
             <div
               style={{
                 width: "100%",
@@ -178,7 +181,7 @@ function AboutMe() {
             >
               <div style={{ width: "30%", height: "100%" }}>
                 <img
-                  src="https://github.com/Garuna414/personal_website/blob/main/public/images/dav.png"
+                  src={dav}
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -217,7 +220,7 @@ function AboutMe() {
               </div>
               <div style={{ width: "30%", height: "100%" }}>
                 <img
-                  src="./images/brio.png"
+                  src={brio}
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -239,7 +242,7 @@ function AboutMe() {
             >
               <div style={{ width: "30%", height: "100%", margin: "0 10px" }}>
                 <img
-                  src="./images/fcrit.png"
+                  src={fcrit}
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />

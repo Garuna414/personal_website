@@ -15,7 +15,7 @@ import "./components/hover.css"
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/personal_website">
       <div>
         <div
           style={{ position: "sticky", top: "0", zIndex: "10", width: "100%" }}
