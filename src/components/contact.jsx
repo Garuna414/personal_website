@@ -1,9 +1,33 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./hover.css";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
-  document.body.style.margin = "0";
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_hnh22gr",
+        "template_ivgr9as",
+        form.current,
+        "UPjKB_qejz6CCr2Zj"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          e.target.reset();
+          console.log("Message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div className="container-fluid" style={{ position: "fixed" }}>
       <div className="row">
@@ -75,11 +99,9 @@ function Contact() {
             scrollBehavior: "smooth",
           }}
         >
-          <section id="contactForm">
+          <form id="contactForm" ref={form} onSubmit={sendEmail}>
             <h1>Contact Form</h1>
-            <p>
-              Fill out the form below with the message you want to convey to me.
-            </p>
+            <p>Message me using this form.</p>
             <br />
             <div className="form-floating mb-3" style={{ width: "500px" }}>
               <input
@@ -87,8 +109,9 @@ function Contact() {
                 className="form-control"
                 id="floatingUsername"
                 placeholder="Username"
+                name="user_name"
               />
-              <label htmlFor="floatingUsername">Username</label>
+              <label htmlFor="floatingUsername">Your Name</label>
             </div>
 
             <div className="form-floating mb-3" style={{ width: "500px" }}>
@@ -97,6 +120,7 @@ function Contact() {
                 className="form-control"
                 id="floatingInput"
                 placeholder="name@example.com"
+                name="user_email"
               />
               <label htmlFor="floatingInput">Your Email</label>
             </div>
@@ -107,16 +131,17 @@ function Contact() {
                 placeholder="Leave a comment here"
                 id="floatingTextarea2"
                 style={{ height: "100px" }}
+                name="message"
               ></textarea>
-              <label htmlFor="floatingTextarea2">Comments</label>
+              <label htmlFor="floatingTextarea2">Message</label>
             </div>
 
             <div className="col-12">
-              <button className="sbmt" type="submit">
+              <button className="sbmt" type="submit" value="Send">
                 Submit form
               </button>
             </div>
-          </section>
+          </form>
           <hr />
           <br />
 
