@@ -166,7 +166,7 @@ function AboutMe() {
           <br />
 
           <section id="school">
-            <h1>School</h1>
+            <h1>School1</h1>
             <div
               style={{
                 width: "100%",
@@ -178,7 +178,7 @@ function AboutMe() {
             >
               <div style={{ width: "30%", height: "100%" }}>
                 <img
-                  src="./images/dav.png"
+                  src="https://github.com/Garuna414/personal_website/blob/main/public/images/dav.png"
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -204,7 +204,7 @@ function AboutMe() {
                 display: "flex",
                 flexDirection: "row",
                 padding: "10px",
-                backgroundColor:"lightcyan",
+                backgroundColor: "lightcyan",
               }}
             >
               <div style={{ width: "70%", height: "100%" }}>
@@ -237,14 +237,14 @@ function AboutMe() {
                 backgroundColor: "lavender",
               }}
             >
-              <div style={{ width: "30%", height: "100%", margin:"0 10px" }}>
+              <div style={{ width: "30%", height: "100%", margin: "0 10px" }}>
                 <img
                   src="./images/fcrit.png"
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />
               </div>
-              <div style={{ width: "70%", height: "100%", margin:"0 10px" }}>
+              <div style={{ width: "70%", height: "100%", margin: "0 10px" }}>
                 <h2>Fr. C. Rodrigues Institute of Technology, Vashi</h2>
                 <p>2021-Present</p>
                 <p style={{ fontSize: "25px" }}>
