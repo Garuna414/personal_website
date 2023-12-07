@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import { BrowserRouter, Link, NavLink, Route, Routes } from "react-router-dom";
-import Resume from "../assets/resume.pdf"
+import Resume from "../assets/resume.pdf";
 
 function NavBar() {
   return (
@@ -12,7 +12,7 @@ function NavBar() {
     >
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/">
+          <NavLink className="navbar-brand" to="/home">
             AnuragNalkar
           </NavLink>
           <button
@@ -30,7 +30,7 @@ function NavBar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link" aria-current="page" to="/">
+                <NavLink className="nav-link" aria-current="page" to="/home">
                   Home
                 </NavLink>
               </li>
@@ -96,7 +96,7 @@ function NavBar() {
                 aria-label="Search"
               />
               <button className="btn btn-outline-success" type="submit">
-                Search
+                Find
               </button>
             </form>
           </div>
