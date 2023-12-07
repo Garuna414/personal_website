@@ -102,19 +102,19 @@ function Projects() {
               <div style={{ width: "40%", margin: "20px 20px" }}>
                 <img
                   className="prjImg"
-                  src="/images/arduino_uno.png"
+                  src="./images/arduino_uno.png"
                   alt=""
                   style={{ maxHeight: "200px", maxWidth: "200px" }}
                 />
                 <img
                   className="prjImg"
-                  src="/images/humidity_sensor.png"
+                  src="./images/humidity_sensor.png"
                   alt=""
                   style={{ maxHeight: "200px", maxWidth: "200px" }}
                 />
                 <img
                   className="prjImg"
-                  src="/images/sensor_prj.png"
+                  src="./images/sensor_prj.png"
                   alt=""
                   style={{ maxHeight: "630px", maxWidth: "320px" }}
                 />
@@ -156,13 +156,13 @@ function Projects() {
               <div style={{ width: "40%", margin: "20px 20px auto" }}>
                 <img
                   className="prjImg"
-                  src="/images/D2S_menu.png"
+                  src="./images/D2S_menu.png"
                   alt=""
                   style={{ width: "100%" }}
                 />
                 <img
                   className="prjImg"
-                  src="/images/D2S_car.png"
+                  src="./images/D2S_car.png"
                   alt=""
                   style={{ width: "100%" }}
                 />
@@ -203,13 +203,13 @@ function Projects() {
               <div style={{ width: "40%", margin: "20px 20px auto" }}>
                 <img
                   className="prjImg"
-                  src="/images/anime_recommend.png"
+                  src="./images/anime_recommend.png"
                   alt=""
                   style={{ width: "100%" }}
                 />
                 <img
                   className="prjImg"
-                  src="/images/anime_recommend.png"
+                  src="./images/anime_recommend.png"
                   alt=""
                   style={{ width: "100%" }}
                 />

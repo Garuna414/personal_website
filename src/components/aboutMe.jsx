@@ -178,7 +178,7 @@ function AboutMe() {
             >
               <div style={{ width: "30%", height: "100%" }}>
                 <img
-                  src="/images/dav.png"
+                  src="./images/dav.png"
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -217,7 +217,7 @@ function AboutMe() {
               </div>
               <div style={{ width: "30%", height: "100%" }}>
                 <img
-                  src="/images/brio.png"
+                  src="./images/brio.png"
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />
@@ -239,7 +239,7 @@ function AboutMe() {
             >
               <div style={{ width: "30%", height: "100%", margin:"0 10px" }}>
                 <img
-                  src="/images/fcrit.png"
+                  src="./images/fcrit.png"
                   alt=""
                   style={{ width: "100%", height: "100%" }}
                 />
