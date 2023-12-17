@@ -11,6 +11,7 @@ import App from "./App";
 //import School from "./school";
 //import Home from "./home";
 import reportWebVitals from "./reportWebVitals";
+import { hydrate, render } from "react-dom";
 //import Links from "./contact";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -20,6 +21,12 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
