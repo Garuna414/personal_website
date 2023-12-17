@@ -29,7 +29,7 @@ function NavBar() {
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="nav-item mx-1">
                 <NavLink className="nav-link" aria-current="page" to="/home">
                   Home
                 </NavLink>
@@ -39,17 +39,17 @@ function NavBar() {
                   About Me
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mx-1">
                 <NavLink className="nav-link" to="/projects">
                   Projects
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mx-1">
                 <NavLink className="nav-link" to="/contact">
-                  Contact
+                  Connect
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item mx-1">
                 <a className="nav-link" href={Resume} download="resume.pdf">
                   Download Resume
                 </a>

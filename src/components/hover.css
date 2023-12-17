@@ -16,7 +16,7 @@ Contact webpage
 
 p {
     font-family: monospace;
-    font-size: 25px;
+    font-size: 1.563rem;
 }
 
 h1, h2, h3, h4 {
@@ -37,11 +37,11 @@ button, a {
 
 .repo {    
     background-color: #2b3035;
-    padding: 10px 10px 10px 10px;
-    border-radius : 10px;
+    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+    border-radius : 0.625rem;
     color: white;
     text-decoration : none;
-    margin: 20px 20px 20px 0;
+    margin: 1.25rem 1.25rem 1.25rem 0;
     transition: .2s ease-in-out;
 }
 
@@ -61,9 +61,9 @@ button, a {
 .sbmt {
     background-color: #2b3035;
     color: white;
-    width: 130px;
-    height: 35px;
-    border-radius: 10px;
+    width: 8.125rem;
+    height: 2.188rem;
+    border-radius: 0.625rem;
     transition: 0.2s ease-in-out;
 }
 
@@ -73,19 +73,19 @@ button, a {
 
 .musicBox {    
     background-color: white;
-    width: 270px;
-    height: 100px;
+    width: 16.875rem;
+    height: 6.25rem;
     text-decoration: none;
-    padding: 10px;
-    margin: 0 15px 15px 15px;
-    border-radius: 10px;
+    padding: 0.625rem;
+    margin: 0 0.938rem 0.938rem 0.938rem;
+    border-radius: 0.625rem;
     color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 1.563rem;
     transition: .2s ease-in-out;
 }
 
@@ -95,5 +95,5 @@ button, a {
 
 
 .prjImg {
-    margin: 10px;
+    margin: 0.625rem;
 }

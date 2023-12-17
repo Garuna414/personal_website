@@ -10,7 +10,7 @@ function Home() {
           className="col-2"
           style={{
             position: "sticky",
-            top: "57px",
+            top: "3.563rem",
             left: "0",
             backgroundColor: "#2b3035",
             height: "100vh",
@@ -22,17 +22,17 @@ function Home() {
               flexDirection: "column",
               alignItems: "center",
               color: "white",
-              fontSize: "40px",
+              fontSize: "2.5rem",
               fontWeight: "bold"
             }}
           >
-            <p style={{ margin: "18px 0 18px 0" }}>W</p>
-            <p style={{ margin: "18px 0 18px 0" }}>E</p>
-            <p style={{ margin: "18px 0 18px 0" }}>L</p>
-            <p style={{ margin: "18px 0 18px 0" }}>C</p>
-            <p style={{ margin: "18px 0 18px 0" }}>O</p>
-            <p style={{ margin: "18px 0 18px 0" }}>M</p>
-            <p style={{ margin: "18px 0 18px 0" }}>E</p>
+            <p style={{ margin: "1.125rem 0 1.125rem 0" }}>W</p>
+            <p style={{ margin: "1.125rem 0 1.125rem 0" }}>E</p>
+            <p style={{ margin: "1.125rem 0 1.125rem 0" }}>L</p>
+            <p style={{ margin: "1.125rem 0 1.125rem 0" }}>C</p>
+            <p style={{ margin: "1.125rem 0 1.125rem 0" }}>O</p>
+            <p style={{ margin: "1.125rem 0 1.125rem 0" }}>M</p>
+            <p style={{ margin: "1.125rem 0 1.125rem 0" }}>E</p>
           </div>
         </div>
 
@@ -40,17 +40,17 @@ function Home() {
           className="col-10"
           style={{
             overflowY: "scroll",
-            height: "calc(100vh - 57px)",
+            height: "calc(100vh - 3.563rem)",
             scrollBehavior: "smooth"
           }}
         >
           <div
             style={{
-              border: "black solid 2px",
+              border: "black solid 0.125rem",
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              padding: "20px 20px 20px 20px"
+              padding: "1.25rem 1.25rem 1.25rem 1.25rem"
             }}
           >
             <img src={profile} />
@@ -61,8 +61,8 @@ function Home() {
                 alignItems: "flex-start",
               }}
             >
-              <h1 style={{ marginLeft: "50px" }}>ANURAG</h1>
-              <h1 style={{ marginLeft: "50px" }}>NALKAR</h1>
+              <h1 style={{ marginLeft: "3.125rem" }}>ANURAG</h1>
+              <h1 style={{ marginLeft: "3.125rem" }}>NALKAR</h1>
             </div>
           </div>
         </div>

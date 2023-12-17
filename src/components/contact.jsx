@@ -1,9 +1,26 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./hover.css";
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [isValidName, setIsValidName] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState(false);
+
+  const handleNameChange = (event) => {
+    const value = event.target.value;
+    setName(value);
+    setIsValidName((!/\d/.test(value)) && (value !== null && value.trim() !== ""));
+  }
+
+  const handleEmailChange = (event) => {
+    const value = event.target.value;
+    setEmail(value)
+    setIsValidEmail(value.includes('@') && value.includes('.'))
+  }
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -35,7 +52,7 @@ function Contact() {
           className="col-2"
           style={{
             position: "sticky",
-            top: "57px",
+            top: "3.563rem",
             left: "0",
             backgroundColor: "#2b3035",
             height: "100vh",
@@ -52,12 +69,12 @@ function Contact() {
                 alignItems: "flex-start",
               }}
             >
-              <p style={{ fontSize: "25px", color: "white" }}>Page contents:</p>
+              <p style={{ fontSize: "1.563rem", color: "white" }}>Page contents:</p>
               <hr
                 style={{
                   marginTop: "0",
                   marginBottom: "0",
-                  height: "1px",
+                  height: "0.063rem",
                   color: "white",
                   width: "100%",
                 }}
@@ -68,7 +85,7 @@ function Contact() {
                     paddingLeft: "0",
                     marginBottom: "0",
                     listStyle: "none",
-                    transform: "translateX(-15px)",
+                    transform: "translateX(-0.938rem)",
                   }}
                 >
                   <li>
@@ -95,7 +112,7 @@ function Contact() {
           className="col-10"
           style={{
             overflowY: "scroll",
-            height: "calc(100vh - 57px)",
+            height: "calc(100vh - 3.563rem)",
             scrollBehavior: "smooth",
           }}
         >
@@ -103,34 +120,40 @@ function Contact() {
             <h1>Contact Form</h1>
             <p>Message me using this form.</p>
             <br />
-            <div className="form-floating mb-3" style={{ width: "500px" }}>
+            <div className="form-floating mb-3" style={{ width: "31.25rem" }}>
               <input
                 type="name"
                 className="form-control"
                 id="floatingUsername"
                 placeholder="Username"
                 name="user_name"
+                onChange={handleNameChange}
+                value={name}
               />
               <label htmlFor="floatingUsername">Your Name</label>
+              {!isValidName && <p>Name should not contain numbers!</p>}
             </div>
 
-            <div className="form-floating mb-3" style={{ width: "500px" }}>
+            <div className="form-floating mb-3" style={{ width: "31.25rem" }}>
               <input
                 type="email"
                 className="form-control"
                 id="floatingInput"
                 placeholder="name@example.com"
                 name="user_email"
+                onChange={handleEmailChange}
+                value={email}
               />
               <label htmlFor="floatingInput">Your Email</label>
+              {!isValidEmail && <p>Enter valid email address!</p>}
             </div>
 
-            <div className="form-floating mb-3" style={{ width: "700px" }}>
+            <div className="form-floating mb-3" style={{ width: "43.75rem" }}>
               <textarea
                 className="form-control"
                 placeholder="Leave a comment here"
                 id="floatingTextarea2"
-                style={{ height: "100px" }}
+                style={{ height: "6.25rem" }}
                 name="message"
               ></textarea>
               <label htmlFor="floatingTextarea2">Message</label>
@@ -153,7 +176,7 @@ function Contact() {
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
-                margin: "80px 250px 0 0",
+                margin: "5rem 15.625rem 0 0",
               }}
             >
               <a
@@ -165,8 +188,8 @@ function Contact() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  height="75px"
-                  width="75px"
+                  height="4.688rem"
+                  width="4.688rem"
                   viewBox="0 0 512 512"
                 >
                   <title>Reddit</title>
@@ -191,8 +214,8 @@ function Contact() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="75px"
-                  height="75px"
+                  width="4.688rem"
+                  height="4.688rem"
                   color="black"
                   viewBox="0 0 16 16"
                 >
@@ -215,8 +238,8 @@ function Contact() {
                   strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
-                  height="75px"
-                  width="75px"
+                  height="4.688rem"
+                  width="4.688rem"
                   color="black"
                 >
                   <title>Facebook</title>
@@ -238,8 +261,8 @@ function Contact() {
                   strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
-                  height="75px"
-                  width="75px"
+                  height="4.688rem"
+                  width="4.688rem"
                 >
                   <title>X</title>
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -255,8 +278,8 @@ function Contact() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="75px"
-                  height="75px"
+                  width="4.688rem"
+                  height="4.688rem"
                   fill="currentColor"
                   className="bi bi-instagram"
                   viewBox="0 0 16 16"
@@ -280,8 +303,8 @@ function Contact() {
                   strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="text-xl"
-                  height="75px"
-                  width="75px"
+                  height="4.688rem"
+                  width="4.688rem"
                   xmlns="http://www.w3.org/2000/svg"
                   color="black"
                 >
@@ -290,7 +313,7 @@ function Contact() {
                 </svg>
               </a>
             </div>
-            <p style={{ fontSize: "25px" }}></p>
+            <p style={{ fontSize: "1.563rem" }}></p>
           </section>
         </div>
       </div>

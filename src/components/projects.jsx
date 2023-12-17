@@ -18,7 +18,7 @@ function Projects() {
           className="col-2"
           style={{
             position: "sticky",
-            top: "57px",
+            top: "3.563rem",
             left: "0",
             backgroundColor: "#2b3035",
             height: "100vh",
@@ -35,12 +35,12 @@ function Projects() {
                 alignItems: "flex-start",
               }}
             >
-              <p style={{ fontSize: "25px", color: "white" }}>Page contents:</p>
+              <p style={{ fontSize: "1.563rem", color: "white" }}>Page contents:</p>
               <hr
                 style={{
                   marginTop: "0",
                   marginBottom: "0",
-                  height: "1px",
+                  height: "0.063rem",
                   color: "white",
                   width: "100%",
                 }}
@@ -51,7 +51,7 @@ function Projects() {
                     paddingLeft: "0",
                     marginBottom: "0",
                     listStyle: "none",
-                    transform: "translateX(-15px)",
+                    transform: "translateX(-0.938rem)",
                   }}
                 >
                   <li>
@@ -89,7 +89,7 @@ function Projects() {
           className="col-10"
           style={{
             overflowY: "scroll",
-            height: "calc(100vh - 57px)",
+            height: "calc(100vh - 3.563rem)",
             scrollBehavior: "smooth",
           }}
         >
@@ -103,37 +103,37 @@ function Projects() {
               style={{
                 display: "flex",
                 flexDirection: "row",
-                border: "black solid 2px",
-                padding: "20px",
+                border: "black solid 0.125rem",
+                padding: "1.25rem",
               }}
             >
-              <div style={{ width: "40%", margin: "20px 20px" }}>
+              <div style={{ width: "40%", margin: "1.25rem 1.25rem" }}>
                 <img
                   className="prjImg"
                   src={uno}
                   alt=""
-                  style={{ maxHeight: "200px", maxWidth: "200px" }}
+                  style={{ maxHeight: "12.5rem", maxWidth: "12.5rem" }}
                 />
                 <img
                   className="prjImg"
                   src={sensor}
                   alt=""
-                  style={{ maxHeight: "200px", maxWidth: "200px" }}
+                  style={{ maxHeight: "12.5rem", maxWidth: "12.5rem" }}
                 />
                 <img
                   className="prjImg"
                   src={sensor_prj}
                   alt=""
-                  style={{ maxHeight: "630px", maxWidth: "320px" }}
+                  style={{ maxHeight: "39.375rem", maxWidth: "31.25rem" }}
                 />
               </div>
-              <div style={{ width: "60%", margin: "20px 20px auto" }}>
+              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>
                   Humidity measurement using Sensor and Arduino Uno
                 </h2>
-                <p style={{ margin: "0 0 auto", fontSize:"20px" }}>Jan 2022 - Feb 2022</p>
+                <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jan 2022 - Feb 2022</p>
                 <hr />
-                <p style={{ fontSize: "25px" }}>
+                <p style={{ fontSize: "1.563rem" }}>
                   This Arduino project allows you to read sensor data (humidity
                   and temperature) from a DHT sensor and display it on a local
                   website served by the Arduino. The project consists of Arduino
@@ -157,11 +157,11 @@ function Projects() {
               style={{
                 display: "flex",
                 flexDirection: "row",
-                border: "black solid 2px",
-                padding: "20px 20px 20px 20px",
+                border: "black solid 0.125rem",
+                padding: "1.25rem 1.25rem 1.25rem 1.25rem",
               }}
             >
-              <div style={{ width: "40%", margin: "20px 20px auto" }}>
+              <div style={{ width: "40%", margin: "1.25rem 1.25rem auto" }}>
                 <img
                   className="prjImg"
                   src={menu}
@@ -175,11 +175,11 @@ function Projects() {
                   style={{ width: "100%" }}
                 />
               </div>
-              <div style={{ width: "60%", margin: "20px 20px auto" }}>
+              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>Drive 2 Survive</h2>
-                <p style={{ margin: "0 0 auto", fontSize:"20px" }}>Jul 2022 - Apr 2023</p>
+                <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jul 2022 - Apr 2023</p>
                 <hr />
-                <p style={{ fontSize: "25px" }}>
+                <p style={{ fontSize: "1.563rem" }}>
                   Welcome to Drive 2 Survive, an exciting singleplayer 2D car
                   racing game developed in Unity using C#! In Drive 2 Survive,
                   you'll experience thrilling racing action across four
@@ -204,11 +204,11 @@ function Projects() {
               style={{
                 display: "flex",
                 flexDirection: "row",
-                border: "black solid 2px",
-                padding: "20px 20px 20px 20px",
+                border: "black solid 0.125rem",
+                padding: "1.25rem 1.25rem 1.25rem 1.25rem",
               }}
             >
-              <div style={{ width: "40%", margin: "20px 20px auto" }}>
+              <div style={{ width: "40%", margin: "1.25rem 1.25rem auto" }}>
                 <img
                   className="prjImg"
                   src={anime}
@@ -222,13 +222,13 @@ function Projects() {
                   style={{ width: "100%" }}
                 />
               </div>
-              <div style={{ width: "60%", margin: "20px 20px auto" }}>
+              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>
                   Anime Recommendation System
                 </h2>
-                <p style={{ margin: "0 0 auto", fontSize:"20px" }}>June 2023 - July 2023</p>
+                <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>June 2023 - July 2023</p>
                 <hr />
-                <p style={{ fontSize: "25px" }}>
+                <p style={{ fontSize: "1.563rem" }}>
                   This machine learning-based system utilizes Python libraries
                   such as Pandas, NumPy, Streamlit, NLTK, Scikit-learn, and
                   Pickle to recommend anime similar to the one selected by the
@@ -254,17 +254,17 @@ function Projects() {
               style={{
                 display: "flex",
                 flexDirection: "row",
-                border: "black solid 2px",
-                marginBottom: "20px",
-                padding: "20px 20px 20px 20px",
+                border: "black solid 0.125rem",
+                marginBottom: "1.25rem",
+                padding: "1.25rem 1.25rem 1.25rem 1.25rem",
               }}
             >
-              <div style={{ width: "40%", margin: "20px 20px auto" }}></div>
-              <div style={{ width: "60%", margin: "20px 20px auto" }}>
+              <div style={{ width: "40%", margin: "1.25rem 1.25rem auto" }}></div>
+              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>Block Chain Auction App</h2>
-                <p style={{ margin: "0 0 auto", fontSize:"20px" }}>Jul 2023 - </p>
+                <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jul 2023 - </p>
                 <hr />
-                <p style={{ fontSize: "25px" }}>
+                <p style={{ fontSize: "1.563rem" }}>
                   This platform is being built to provide users with a seamless
                   and secure way to participate in auctions using blockchain
                   technology. Below, you will find information about the
