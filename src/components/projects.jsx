@@ -91,6 +91,7 @@ function Projects() {
             overflowY: "scroll",
             height: "calc(100vh - 3.563rem)",
             scrollBehavior: "smooth",
+            backgroundColor:"beige"
           }}
         >
           <h1>Projects</h1>
@@ -105,9 +106,11 @@ function Projects() {
                 flexDirection: "row",
                 border: "black solid 0.125rem",
                 padding: "1.25rem",
+                flexWrap:"wrap",
+                gap:"1rem"
               }}
             >
-              <div style={{ width: "40%", margin: "1.25rem 1.25rem" }}>
+              <div className="prjIcons" style={{ width: "27.903rem" }}>
                 <img
                   className="prjImg"
                   src={uno}
@@ -127,7 +130,7 @@ function Projects() {
                   style={{ maxHeight: "39.375rem", maxWidth: "31.25rem" }}
                 />
               </div>
-              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
+              <div style={{ width: "39rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>
                   Humidity measurement using Sensor and Arduino Uno
                 </h2>
@@ -158,10 +161,12 @@ function Projects() {
                 display: "flex",
                 flexDirection: "row",
                 border: "black solid 0.125rem",
-                padding: "1.25rem 1.25rem 1.25rem 1.25rem",
+                padding: "1.25rem",
+                flexWrap:"wrap",
+                gap:"1rem"
               }}
             >
-              <div style={{ width: "40%", margin: "1.25rem 1.25rem auto" }}>
+              <div className="prjIcons" style={{ width: "27.903rem"}}>
                 <img
                   className="prjImg"
                   src={menu}
@@ -175,7 +180,7 @@ function Projects() {
                   style={{ width: "100%" }}
                 />
               </div>
-              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
+              <div style={{ width: "40rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>Drive 2 Survive</h2>
                 <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jul 2022 - Apr 2023</p>
                 <hr />
@@ -205,10 +210,12 @@ function Projects() {
                 display: "flex",
                 flexDirection: "row",
                 border: "black solid 0.125rem",
-                padding: "1.25rem 1.25rem 1.25rem 1.25rem",
+                padding: "1.25rem",
+                flexWrap:"wrap",
+                gap:"1rem"
               }}
             >
-              <div style={{ width: "40%", margin: "1.25rem 1.25rem auto" }}>
+              <div className="prjIcons" style={{ width: "27.903rem" }}>
                 <img
                   className="prjImg"
                   src={anime}
@@ -222,7 +229,7 @@ function Projects() {
                   style={{ width: "100%" }}
                 />
               </div>
-              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
+              <div style={{ width: "40rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>
                   Anime Recommendation System
                 </h2>
@@ -256,11 +263,13 @@ function Projects() {
                 flexDirection: "row",
                 border: "black solid 0.125rem",
                 marginBottom: "1.25rem",
-                padding: "1.25rem 1.25rem 1.25rem 1.25rem",
+                padding: "1.25rem",
+                flexWrap:"wrap",
+                gap:"1rem"
               }}
             >
-              <div style={{ width: "40%", margin: "1.25rem 1.25rem auto" }}></div>
-              <div style={{ width: "60%", margin: "1.25rem 1.25rem auto" }}>
+              <div className="prjIcons" style={{ width: "27.903rem" }}></div>
+              <div style={{ width: "40rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>Block Chain Auction App</h2>
                 <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jul 2023 - </p>
                 <hr />

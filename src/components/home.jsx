@@ -44,27 +44,8 @@ function Home() {
             scrollBehavior: "smooth"
           }}
         >
-          <div
-            style={{
-              border: "black solid 0.125rem",
-              display: "flex",
-              flexDirection: "row",
-              alignItems: "center",
-              padding: "1.25rem 1.25rem 1.25rem 1.25rem"
-            }}
-          >
-            <img src={profile} />
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-start",
-              }}
-            >
-              <h1 style={{ marginLeft: "3.125rem" }}>ANURAG</h1>
-              <h1 style={{ marginLeft: "3.125rem" }}>NALKAR</h1>
-            </div>
-          </div>
+          <p style={{fontSize:"60px"}}>Hi there,</p>
+          <p style={{fontSize:"50px"}}>Welcome to Anurag's Website</p>
         </div>
       </div>
     </div>

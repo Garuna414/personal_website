@@ -114,13 +114,14 @@ function Contact() {
             overflowY: "scroll",
             height: "calc(100vh - 3.563rem)",
             scrollBehavior: "smooth",
+            backgroundColor:"beige"
           }}
         >
           <form id="contactForm" ref={form} onSubmit={sendEmail}>
             <h1>Contact Form</h1>
             <p>Message me using this form.</p>
             <br />
-            <div className="form-floating mb-3" style={{ width: "31.25rem" }}>
+            <div className="form-floating mb-3" style={{ maxWidth: "31.25rem", width:"auto" }}>
               <input
                 type="name"
                 className="form-control"
@@ -134,7 +135,7 @@ function Contact() {
               {!isValidName && <p>Name should not contain numbers!</p>}
             </div>
 
-            <div className="form-floating mb-3" style={{ width: "31.25rem" }}>
+            <div className="form-floating mb-3" style={{ maxWidth: "31.25rem", width:"auto" }}>
               <input
                 type="email"
                 className="form-control"
@@ -148,7 +149,7 @@ function Contact() {
               {!isValidEmail && <p>Enter valid email address!</p>}
             </div>
 
-            <div className="form-floating mb-3" style={{ width: "43.75rem" }}>
+            <div className="form-floating mb-3" style={{ maxWidth: "43.75rem", width:"auto" }}>
               <textarea
                 className="form-control"
                 placeholder="Leave a comment here"
@@ -171,12 +172,13 @@ function Contact() {
           <section id="otherLinks">
             <h1>Other Links</h1>
             <p>You can also contact me through these platforms.</p>
-            <div
+            <div className="contactIcons"
               style={{
                 display: "flex",
-                justifyContent: "space-between",
+                flexDirection:"row",
                 alignItems: "center",
-                margin: "5rem 15.625rem 0 0",
+                flexWrap:"wrap",
+                gap:"2rem"
               }}
             >
               <a
@@ -186,10 +188,10 @@ function Contact() {
                 rel="noreferrer"
                 className="links"
               >
-                <svg
+                <svg className="svgIcons"
                   xmlns="http://www.w3.org/2000/svg"
-                  height="4.688rem"
-                  width="4.688rem"
+                  height="4rem"
+                  width="4rem"
                   viewBox="0 0 512 512"
                 >
                   <title>Reddit</title>
@@ -212,10 +214,10 @@ function Contact() {
                 rel="noreferrer"
                 className="links"
               >
-                <svg
+                <svg className="svgIcons"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="4.688rem"
-                  height="4.688rem"
+                  width="4rem"
+                  height="4rem"
                   color="black"
                   viewBox="0 0 16 16"
                 >
@@ -231,15 +233,15 @@ function Contact() {
                 rel="noreferrer"
                 className="links"
               >
-                <svg
+                <svg 
                   fill="currentColor"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
-                  height="4.688rem"
-                  width="4.688rem"
+                  height="4rem"
+                  width="4rem"
                   color="black"
                 >
                   <title>Facebook</title>
@@ -261,8 +263,8 @@ function Contact() {
                   strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
-                  height="4.688rem"
-                  width="4.688rem"
+                  height="4rem"
+                  width="4rem"
                 >
                   <title>X</title>
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -278,8 +280,8 @@ function Contact() {
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="4.688rem"
-                  height="4.688rem"
+                  width="4rem"
+                  height="4rem"
                   fill="currentColor"
                   className="bi bi-instagram"
                   viewBox="0 0 16 16"
@@ -303,8 +305,8 @@ function Contact() {
                   strokeWidth="0"
                   viewBox="0 0 1024 1024"
                   className="text-xl"
-                  height="4.688rem"
-                  width="4.688rem"
+                  height="4rem"
+                  width="4rem"
                   xmlns="http://www.w3.org/2000/svg"
                   color="black"
                 >

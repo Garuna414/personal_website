@@ -14,6 +14,7 @@ import reportWebVitals from "./reportWebVitals";
 import { hydrate, render } from "react-dom";
 //import Links from "./contact";
 import "bootstrap/dist/css/bootstrap.css";
+import { createRoot, hydrateRoot  } from 'react-dom/client';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,9 +25,10 @@ root.render(
 
 const rootElement = document.getElementById("root");
 if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
+  const root = hydrateRoot(rootElement, <App/>);
 } else {
-  render(<App />, rootElement);
+  const root = createRoot(rootElement); 
+  root.render(<App/>);
 }
 
 // If you want to start measuring performance in your app, pass a function

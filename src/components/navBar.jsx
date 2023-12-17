@@ -7,10 +7,10 @@ import Resume from "../assets/resume.pdf";
 function NavBar() {
   return (
     <nav
-      className="navbar-expand-lg nav-underline bg-dark border-body"
+      className="navbar-expand-lg nav-underline bg-primary border-body"
       data-bs-theme="dark"
     >
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg bg-body-primary">
         <div className="container-fluid">
           <NavLink className="navbar-brand" to="/home">
             AnuragNalkar
@@ -88,7 +88,7 @@ function NavBar() {
                 </ul>
   </li>*/}
             </ul>
-            <form className="d-flex" role="search">
+            {/* <form className="d-flex" role="search">
               <input
                 className="form-control me-2"
                 type="search"
@@ -98,7 +98,7 @@ function NavBar() {
               <button className="btn btn-outline-success" type="submit">
                 Find
               </button>
-            </form>
+            </form> */}
           </div>
         </div>
       </nav>
