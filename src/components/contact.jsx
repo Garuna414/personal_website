@@ -6,8 +6,10 @@ import emailjs from "@emailjs/browser";
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [msg, setMsg] = useState(' ');
   const [isValidName, setIsValidName] = useState(false);
   const [isValidEmail, setIsValidEmail] = useState(false);
+  const [isValidMsg, setIsValidMsg] = useState(false);
 
   const handleNameChange = (event) => {
     const value = event.target.value;
@@ -20,6 +22,14 @@ function Contact() {
     setEmail(value)
     setIsValidEmail(value.includes('@') && value.includes('.'))
   }
+
+  const handleMsgChange = (event) => {
+    const value = event.target.value;
+    setMsg(value);
+    setIsValidMsg(value !== null && value.trim() !== "")
+  }
+
+  const isFormValid = isValidName && isValidEmail && isValidMsg;
 
   const form = useRef();
 
@@ -132,7 +142,7 @@ function Contact() {
                 value={name}
               />
               <label htmlFor="floatingUsername">Your Name</label>
-              {!isValidName && <p>Name should not contain numbers!</p>}
+              {!isValidName && <p style={{fontSize:"1.25rem", color:"red"}}>Name should not contain numbers!</p>}
             </div>
 
             <div className="form-floating mb-3" style={{ maxWidth: "31.25rem", width:"auto" }}>
@@ -146,7 +156,7 @@ function Contact() {
                 value={email}
               />
               <label htmlFor="floatingInput">Your Email</label>
-              {!isValidEmail && <p>Enter valid email address!</p>}
+              {!isValidEmail && <p style={{fontSize:"1.25rem", color:"red"}}>Enter valid email address!</p>}
             </div>
 
             <div className="form-floating mb-3" style={{ maxWidth: "43.75rem", width:"auto" }}>
@@ -156,12 +166,15 @@ function Contact() {
                 id="floatingTextarea2"
                 style={{ height: "6.25rem" }}
                 name="message"
+                onChange={handleMsgChange}
+                value={msg}
               ></textarea>
               <label htmlFor="floatingTextarea2">Message</label>
+              {!isValidMsg && <p style={{fontSize:"1.25rem", color:"red"}}>Message cannot be blank!</p>}
             </div>
 
             <div className="col-12">
-              <button className="sbmt" type="submit" value="Send">
+              <button className="sbmt" type="submit" value="Send" disabled={!isFormValid}>
                 Submit form
               </button>
             </div>

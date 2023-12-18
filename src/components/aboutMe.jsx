@@ -313,6 +313,8 @@ function AboutMe() {
               <p style={skillBody}>JavaScript</p>
               <p style={skillBody}>ReactJS</p>
               <p style={skillBody}>Java</p>
+              <p style={skillBody}>Boostrap</p>
+              <p style={skillBody}>REST APIs</p>
               <p style={skillBody}>MySQL Server</p>
             </div>
           </div>

@@ -16,7 +16,7 @@ import "./components/hover.css"
 function App() {
   return (
     <BrowserRouter basename="/personal_website">
-      <div>
+      <div className="screenContainer" style={{ width:"100%"}}>
         <div
           style={{ position: "sticky", top: "0", zIndex: "10", width: "100%" }}
         >

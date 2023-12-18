@@ -8,11 +8,25 @@ import anime from "../images/anime_recommend.png";
 import movie from "../images/movie_recommend.png";
 import car from "../images/D2S_car.png";
 import menu from "../images/D2S_menu.png";
+import weather1 from "../images/weather1.png";
+import weather2 from "../images/weather2.png";
 
 
 function Projects() {
+  const tstack1 = ["ReactJS", "Boostrap", "JavaScript", "GeoDB Cities API", "Open Weather API", "Git Bash"];
+  const tstack2 = ["Arduino", "Sensor Modelling", "HTML", "CSS"];
+  const tstack3 = ["Unity 2D", "C#"]
+  const tstack4 = ["Python", "Pandas", "NumPy", "Streamlit", "NLTK", "Scikit learn", "Pickle"]
+  const tstack5 = ["ReactJS", "Bootstrap", "JavaScript", "Git Bash"]
+
+  const string1 = tstack1.join(" . ");
+  const string2 = tstack2.join(" . ");
+  const string3 = tstack3.join(" . ");
+  const string4 = tstack4.join(" . ");
+  const string5 = tstack5.join(" . ");
+
   return (
-    <div className="container-fluid" style={{ position: "fixed" }}>
+    <div className="container-fluid" style={{  }}>
       <div className="row">
         <div
           className="col-2"
@@ -99,6 +113,52 @@ function Projects() {
           <br />
           <br />
 
+          <section id="weather">
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                border: "black solid 0.125rem",
+                padding: "1.25rem",
+                flexWrap:"wrap",
+                gap:"1rem"
+              }}
+            >
+              <div className="prjIcons" style={{ width: "27.903rem"}}>
+                <img
+                  className="prjImg"
+                  src={weather1}
+                  alt=""
+                  style={{ width: "100%" }}
+                />
+                <img
+                  className="prjImg"
+                  src={weather2}
+                  alt=""
+                  style={{ width: "100%" }}
+                />
+              </div>
+              <div style={{ width: "43rem", margin: "1.25rem 1.25rem auto" }}>
+                <h2 style={{ margin: "0 0 auto" }}>WeatherUNA</h2>
+                <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Dec 2023 - Present</p>
+                <hr/>
+                <p style={{fontSize: "1.35rem"}}>{string1}</p>
+                <hr />
+                <p style={{ fontSize: "1.563rem" }}>
+                  WeatherUNA is a weather forecating app developed using ReactJS. It uses Gro DB cities API to suggest names of cities while typing and then uses OpenWeather API to fetch the current weather and forecast weather upto the next 5 days. The web app is hosted using GitHub Pages.
+                </p>
+
+                <a
+                  className="repo"
+                  href="https://github.com/Garuna414/React-Weather-App"
+                >
+                  Github Repo -&gt;
+                </a>
+              </div>
+            </div>
+          </section>
+          <br />
+
           <section id="hsensor">
             <div
               style={{
@@ -130,11 +190,13 @@ function Projects() {
                   style={{ maxHeight: "39.375rem", maxWidth: "31.25rem" }}
                 />
               </div>
-              <div style={{ width: "39rem", margin: "1.25rem 1.25rem auto" }}>
+              <div style={{ width: "43rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>
                   Humidity measurement using Sensor and Arduino Uno
                 </h2>
                 <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jan 2022 - Feb 2022</p>
+                <hr/>
+                <p style={{fontSize: "1.35rem"}}>{string2}</p>
                 <hr />
                 <p style={{ fontSize: "1.563rem" }}>
                   This Arduino project allows you to read sensor data (humidity
@@ -180,9 +242,11 @@ function Projects() {
                   style={{ width: "100%" }}
                 />
               </div>
-              <div style={{ width: "40rem", margin: "1.25rem 1.25rem auto" }}>
+              <div style={{ width: "43rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>Drive 2 Survive</h2>
                 <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jul 2022 - Apr 2023</p>
+                <hr/>
+                <p style={{fontSize: "1.35rem"}}>{string3}</p>
                 <hr />
                 <p style={{ fontSize: "1.563rem" }}>
                   Welcome to Drive 2 Survive, an exciting singleplayer 2D car
@@ -229,11 +293,13 @@ function Projects() {
                   style={{ width: "100%" }}
                 />
               </div>
-              <div style={{ width: "40rem", margin: "1.25rem 1.25rem auto" }}>
+              <div style={{ width: "43rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>
                   Anime Recommendation System
                 </h2>
                 <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>June 2023 - July 2023</p>
+                <hr/>
+                <p style={{fontSize: "1.35rem"}}>{string4}</p>
                 <hr />
                 <p style={{ fontSize: "1.563rem" }}>
                   This machine learning-based system utilizes Python libraries
@@ -269,9 +335,11 @@ function Projects() {
               }}
             >
               <div className="prjIcons" style={{ width: "27.903rem" }}></div>
-              <div style={{ width: "40rem", margin: "1.25rem 1.25rem auto" }}>
+              <div style={{ width: "43rem", margin: "1.25rem 1.25rem auto" }}>
                 <h2 style={{ margin: "0 0 auto" }}>Block Chain Auction App</h2>
-                <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jul 2023 - </p>
+                <p style={{ margin: "0 0 auto", fontSize:"1.25rem" }}>Jul 2023 - Present</p>
+                <hr />
+                <p style={{fontSize: "1.35rem"}}>{string5}</p>
                 <hr />
                 <p style={{ fontSize: "1.563rem" }}>
                   This platform is being built to provide users with a seamless

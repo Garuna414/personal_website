@@ -11,6 +11,10 @@ Contact webpage
     .col-2 {
       display: block; /* Display the component when the screen width is 768px or wider */
     }
+    
+    .screenContainer {
+        position: fixed;
+    }
 
   }
 
@@ -46,6 +50,16 @@ Contact webpage
 
     .musicContainer {
         width: auto;
+    }
+    .screenContainer {
+        height: auto;
+    }
+
+    .homeCTA {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 }
   
@@ -105,6 +119,10 @@ button, a {
 
 .sbmt:hover{
     background-color: rgba(0, 0, 0, .7);
+}
+
+.sbmt:disabled {
+    background-color: rgba(0, 0, 0, .3);
 }
 
 .musicBox {    
