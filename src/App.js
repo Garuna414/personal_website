@@ -1,11 +1,6 @@
-// App.js
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navBar";
-//import LeftSide from "./components/leftSide";
-//import School from "./components/school";
-//import HighSchool from "./components/highSchool";
-//import College from "./components/college";
 import Home from "./components/home";
 import Contact from "./components/contact";
 import AboutMe from "./components/aboutMe";
@@ -32,7 +27,6 @@ function App() {
               <Route exact path="/about" element={<AboutMe />} />
               <Route exact path="/contact" element={<Contact />} />
               <Route exact path="/projects" element={<Projects />} />
-              {/* Define other routes here */}
             </Routes>
           </div>
         </div>

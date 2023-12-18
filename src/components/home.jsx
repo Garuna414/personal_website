@@ -1,7 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
-import profile from "../images/profile.png";
 
 function Home() {
   const arr = ["3rd Year Student", "FrontEnd Developer", "ReactJS Learner"];

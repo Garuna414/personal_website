@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import { BrowserRouter, Link, NavLink, Route, Routes } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Resume from "../assets/resume.pdf";
 
 function NavBar() {
@@ -12,7 +12,7 @@ function NavBar() {
     >
       <nav className="navbar navbar-expand-lg bg-body-primary">
         <div className="container-fluid">
-          <NavLink className="navbar-brand" to="/home">
+          <NavLink className="navbar-brand" to="/">
             AnuragNalkar
           </NavLink>
           <button
