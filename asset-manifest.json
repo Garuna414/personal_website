@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.b887b92d.css",
-    "main.js": "/personal_website/static/js/main.34621a2a.js",
+    "main.css": "/personal_website/static/css/main.e5306b2c.css",
+    "main.js": "/personal_website/static/js/main.2eacf02d.js",
     "static/js/787.58a16f24.chunk.js": "/personal_website/static/js/787.58a16f24.chunk.js",
     "static/media/timelapse.mp4": "/personal_website/static/media/timelapse.0c1866227608141575fe.mp4",
     "static/media/brio.png": "/personal_website/static/media/brio.bb740073f913b363610b.png",
     "static/media/D2S_car.png": "/personal_website/static/media/D2S_car.705254c6f9aef85dd794.png",
     "static/media/D2S_menu.png": "/personal_website/static/media/D2S_menu.a0c15860e55cbde19020.png",
     "static/media/dav.png": "/personal_website/static/media/dav.a02f95591d5132b534fe.png",
+    "static/media/weather2.png": "/personal_website/static/media/weather2.9308ee6c281d168b7879.png",
+    "static/media/weather1.png": "/personal_website/static/media/weather1.c4809d1484126f099c41.png",
     "static/media/resume.pdf": "/personal_website/static/media/resume.59a704daa56404f57137.pdf",
     "static/media/humidity_sensor.png": "/personal_website/static/media/humidity_sensor.2cfdb7b4d3287c281f77.png",
     "static/media/arduino_uno.png": "/personal_website/static/media/arduino_uno.3b8494283b12f70bc562.png",
@@ -16,12 +18,12 @@
     "static/media/movie_recommend.png": "/personal_website/static/media/movie_recommend.97afd45986ad32b894ec.png",
     "static/media/sensor_prj.png": "/personal_website/static/media/sensor_prj.63914698ccced364fa29.png",
     "index.html": "/personal_website/index.html",
-    "main.b887b92d.css.map": "/personal_website/static/css/main.b887b92d.css.map",
-    "main.34621a2a.js.map": "/personal_website/static/js/main.34621a2a.js.map",
+    "main.e5306b2c.css.map": "/personal_website/static/css/main.e5306b2c.css.map",
+    "main.2eacf02d.js.map": "/personal_website/static/js/main.2eacf02d.js.map",
     "787.58a16f24.chunk.js.map": "/personal_website/static/js/787.58a16f24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b887b92d.css",
-    "static/js/main.34621a2a.js"
+    "static/css/main.e5306b2c.css",
+    "static/js/main.2eacf02d.js"
   ]
 }
