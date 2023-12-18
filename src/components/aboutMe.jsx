@@ -24,7 +24,7 @@ function AboutMe() {
   return (
     <div
       className="container-fluid"
-      style={{ position: "fixed", padding: "0" }}
+      style={{padding: "0" }}
     >
       <div className="row" style={{ width: "100%", margin: "0" }}>
         <div

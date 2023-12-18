@@ -46,7 +46,7 @@ function Contact() {
   };
 
   return (
-    <div className="container-fluid" style={{ position: "fixed" }}>
+    <div className="container-fluid" style={{ }}>
       <div className="row">
         <div
           className="col-2"
