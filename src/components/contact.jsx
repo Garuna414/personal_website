@@ -48,6 +48,14 @@ function Contact() {
           console.log(result.text);
           e.target.reset();
           console.log("Message sent");
+          form.current.reset(); // Reset the form fields
+          setName('');
+          setEmail('');
+          setMsg('');
+          setIsValidName(false);
+          setIsValidEmail(false);
+          setIsValidMsg(false);
+          alert("Form submitted successfully");
         },
         (error) => {
           console.log(error.text);
